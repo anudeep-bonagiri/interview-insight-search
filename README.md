@@ -1,6 +1,9 @@
 # Interview Insight Search
 
 [![CI](https://github.com/anudeep-bonagiri/interview-insight-search/actions/workflows/ci.yml/badge.svg)](https://github.com/anudeep-bonagiri/interview-insight-search/actions/workflows/ci.yml)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://interview-insight-search.streamlit.app)
+
+**Live demo:** https://interview-insight-search.streamlit.app
 
 Semantic search and grounded insight synthesis over customer-research interview
 transcripts. Ask a question in plain English, get back the passages that answer
