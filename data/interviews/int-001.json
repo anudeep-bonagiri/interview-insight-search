@@ -1,0 +1,26 @@
+{
+  "id": "int-001",
+  "title": "Onboarding and bank connection setup",
+  "product": "Maple",
+  "date": "2026-02-03",
+  "interviewer": "Priya (Research)",
+  "participant": {
+    "name": "Daniel",
+    "role": "Operations Manager",
+    "company": "12-person creative agency"
+  },
+  "turns": [
+    { "speaker": "Priya", "ts": "00:00:08", "text": "Thanks for hopping on, Daniel. To start, can you walk me through the first day you set up Maple for your team?" },
+    { "speaker": "Daniel", "ts": "00:00:21", "text": "Sure. Honestly the very first hour was rough. Signing up was fine, but the moment I tried to connect our business bank account it just spun and then threw a generic error." },
+    { "speaker": "Priya", "ts": "00:01:02", "text": "What did the error say, if you remember?" },
+    { "speaker": "Daniel", "ts": "00:01:10", "text": "Something like 'We couldn't reach your institution, try again later.' No explanation. I tried four times across two days before it finally connected. I almost gave up and assumed the product was broken." },
+    { "speaker": "Priya", "ts": "00:01:48", "text": "That sounds frustrating. Was there any guidance during that flow?" },
+    { "speaker": "Daniel", "ts": "00:01:55", "text": "Not really. There was no checklist telling me what to do first. I would have loved a simple 'set up in three steps' kind of wizard. Instead I was clicking around the dashboard trying to figure out the right order." },
+    { "speaker": "Priya", "ts": "00:02:40", "text": "Once you got past the bank connection, how did the rest of setup go?" },
+    { "speaker": "Daniel", "ts": "00:02:49", "text": "Inviting teammates was smooth, that part I liked. And categorizing the first batch of transactions was actually kind of satisfying. But getting there took two days when it should have taken twenty minutes." },
+    { "speaker": "Priya", "ts": "00:03:30", "text": "If you could change one thing about that first experience, what would it be?" },
+    { "speaker": "Daniel", "ts": "00:03:38", "text": "A guided onboarding checklist that tells me the order to do things in, and a much clearer error when the bank link fails. Tell me whether it's my bank, my credentials, or your side. The mystery is what made me lose trust early." },
+    { "speaker": "Priya", "ts": "00:04:20", "text": "Did that early friction affect how your team sees the product now?" },
+    { "speaker": "Daniel", "ts": "00:04:27", "text": "We use it daily now and it's fine, but two of my teammates still think of Maple as 'the thing that was a pain to set up.' First impressions really stuck." }
+  ]
+}

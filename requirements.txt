@@ -1,0 +1,6 @@
+# For Streamlit Community Cloud (and any "pip install -r" deploy target).
+# Installs the package (which pulls numpy, pyyaml, fastembed) plus the UI and
+# synthesis extras the web app uses.
+-e .
+streamlit>=1.40
+anthropic>=0.40

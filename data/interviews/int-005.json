@@ -1,0 +1,24 @@
+{
+  "id": "int-005",
+  "title": "Support experience and reporting limitations",
+  "product": "Maple",
+  "date": "2026-02-12",
+  "interviewer": "Priya (Research)",
+  "participant": {
+    "name": "Tomás",
+    "role": "Finance Lead",
+    "company": "40-person ecommerce company"
+  },
+  "turns": [
+    { "speaker": "Priya", "ts": "00:00:08", "text": "Tomás, you've been with Maple about a year. How's support been when you've needed it?" },
+    { "speaker": "Tomás", "ts": "00:00:19", "text": "Mixed. The onboarding specialist we got at the start was fantastic, genuinely. She set up our approval rules with me on a call and I felt taken care of. But once we were past onboarding, regular support got slow." },
+    { "speaker": "Priya", "ts": "00:00:55", "text": "Slow how?" },
+    { "speaker": "Tomás", "ts": "00:01:01", "text": "First response is often a day or two, and it's clearly a different, more junior team. For an urgent close-the-books issue, two days is too long. I end up finding workarounds myself instead of waiting." },
+    { "speaker": "Priya", "ts": "00:01:48", "text": "Switching gears, how well does Maple handle your reporting needs?" },
+    { "speaker": "Tomás", "ts": "00:01:56", "text": "That's actually my biggest gripe. The built-in reports are too basic. I can see spend by category, but I can't build a custom report comparing departments month over month without exporting everything to a spreadsheet." },
+    { "speaker": "Priya", "ts": "00:02:42", "text": "So you're exporting a lot?" },
+    { "speaker": "Tomás", "ts": "00:02:49", "text": "Constantly. And the export itself is limited, it caps at a date range and doesn't include the receipt links, so my CSV loses the audit trail. A proper custom report builder, and an export that keeps the receipt references, would save me hours every month." },
+    { "speaker": "Priya", "ts": "00:03:40", "text": "Between support speed and reporting, which matters more to you?" },
+    { "speaker": "Tomás", "ts": "00:03:47", "text": "Reporting, by a lot. I can live with slower support if the product lets me self-serve the numbers I need. Right now the weak reporting is what makes my month-end painful." }
+  ]
+}

@@ -1,0 +1,71 @@
+# Labeled retrieval evaluation set.
+#
+# Relevance is labeled at the (interview, turn-index) level rather than the
+# chunk level, so labels stay valid even if chunking parameters change. At eval
+# time, a retrieved chunk counts as relevant if it overlaps any labeled turn for
+# that query. Turn indices are 0-based into each interview's `turns` array.
+
+queries:
+  - id: q1
+    query: "What makes onboarding difficult for new users?"
+    relevant:
+      - interview: int-001
+        turns: [1, 3, 5, 9]
+
+  - id: q2
+    query: "Why are customers thinking about cancelling or switching to a competitor?"
+    relevant:
+      - interview: int-002
+        turns: [5, 7, 9]
+      - interview: int-006
+        turns: [5, 9]
+
+  - id: q3
+    query: "Problems with mobile receipt scanning accuracy"
+    relevant:
+      - interview: int-003
+        turns: [3, 5, 9]
+
+  - id: q4
+    query: "Issues with the QuickBooks or accounting integration sync"
+    relevant:
+      - interview: int-004
+        turns: [3, 5, 7, 9]
+      - interview: int-002
+        turns: [7]
+
+  - id: q5
+    query: "Feedback about pricing and per-seat costs"
+    relevant:
+      - interview: int-002
+        turns: [1, 3, 7, 9]
+
+  - id: q6
+    query: "How do customers describe the customer support experience?"
+    relevant:
+      - interview: int-005
+        turns: [1, 3]
+
+  - id: q7
+    query: "What features do customers love or find most valuable?"
+    relevant:
+      - interview: int-006
+        turns: [1, 3]
+
+  - id: q8
+    query: "Limitations with reporting and data export"
+    relevant:
+      - interview: int-005
+        turns: [5, 7, 9]
+
+  - id: q9
+    query: "Requests for multi-entity support and approval workflows"
+    relevant:
+      - interview: int-006
+        turns: [5, 7, 9]
+
+  - id: q10
+    query: "Requests for a guided setup wizard or clearer error messages"
+    relevant:
+      - interview: int-001
+        turns: [5, 9]

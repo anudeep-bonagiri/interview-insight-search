@@ -1,0 +1,24 @@
+{
+  "id": "int-002",
+  "title": "Pricing concerns and considering a switch",
+  "product": "Maple",
+  "date": "2026-02-05",
+  "interviewer": "Priya (Research)",
+  "participant": {
+    "name": "Sofia",
+    "role": "Co-founder",
+    "company": "5-person SaaS startup"
+  },
+  "turns": [
+    { "speaker": "Priya", "ts": "00:00:06", "text": "Sofia, I know renewal is coming up for you. How are you feeling about it?" },
+    { "speaker": "Sofia", "ts": "00:00:15", "text": "Torn, honestly. We like the product, but the price keeps creeping. We started at the base plan and now we're paying per seat for people who barely log in." },
+    { "speaker": "Priya", "ts": "00:00:44", "text": "Can you say more about the per-seat part?" },
+    { "speaker": "Sofia", "ts": "00:00:51", "text": "Our accountant and two advisors need read access maybe once a month, but we pay full price for each of them. Paying a full seat for someone who just looks at a report feels wasteful. A viewer-only tier would change the math completely." },
+    { "speaker": "Priya", "ts": "00:01:35", "text": "Are you actively comparing alternatives?" },
+    { "speaker": "Sofia", "ts": "00:01:41", "text": "Yeah, we're seriously looking at moving back to QuickBooks because our accountant already lives there. The only thing keeping us on Maple is that the day-to-day expense flow is nicer. But 'nicer' is getting hard to justify when it's almost double the cost." },
+    { "speaker": "Priya", "ts": "00:02:28", "text": "So cost is the main driver of the reconsideration?" },
+    { "speaker": "Sofia", "ts": "00:02:34", "text": "Cost is number one. Number two is that the QuickBooks sync has been flaky for us, so we're already half living in two tools. If I'm paying premium and still doing double entry, why am I paying premium?" },
+    { "speaker": "Priya", "ts": "00:03:18", "text": "If pricing weren't an issue, would you stay?" },
+    { "speaker": "Sofia", "ts": "00:03:24", "text": "Probably yes. The core product is good. Give me a cheaper viewer seat and a sync I can trust and I'd renew without thinking about it. Right now it's the cost per seat that makes me open the spreadsheet and reconsider." }
+  ]
+}

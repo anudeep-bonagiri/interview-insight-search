@@ -1,0 +1,24 @@
+{
+  "id": "int-004",
+  "title": "Accounting integrations and sync reliability",
+  "product": "Maple",
+  "date": "2026-02-10",
+  "interviewer": "Marcus (Research)",
+  "participant": {
+    "name": "Helen",
+    "role": "Bookkeeper",
+    "company": "Outsourced bookkeeping firm, ~30 clients"
+  },
+  "turns": [
+    { "speaker": "Marcus", "ts": "00:00:07", "text": "Helen, you manage books for a lot of clients. Where does Maple fit in your stack?" },
+    { "speaker": "Helen", "ts": "00:00:16", "text": "It sits in front of QuickBooks. Clients capture expenses in Maple, and it's supposed to push clean, categorized transactions into QuickBooks so I don't re-key anything." },
+    { "speaker": "Marcus", "ts": "00:00:42", "text": "Supposed to. How's it working in practice?" },
+    { "speaker": "Helen", "ts": "00:00:48", "text": "The sync is the weak link. About once a week a batch fails silently. No alert, nothing in my inbox. I only find out at month-end when QuickBooks is missing transactions and the totals don't reconcile." },
+    { "speaker": "Marcus", "ts": "00:01:30", "text": "Silent failures sound painful. What do you do when that happens?" },
+    { "speaker": "Helen", "ts": "00:01:37", "text": "I manually export a CSV from Maple and re-import, then hunt for duplicates because sometimes half the batch did go through. It can eat an afternoon per client. For thirty clients that adds up fast." },
+    { "speaker": "Marcus", "ts": "00:02:25", "text": "Is it specific categories or mappings that break?" },
+    { "speaker": "Helen", "ts": "00:02:32", "text": "Often it's when a client makes a new category in Maple that doesn't have a matching account in QuickBooks. The sync just chokes instead of asking me to map it. A mapping screen that catches unmatched categories before pushing would save me the most pain." },
+    { "speaker": "Marcus", "ts": "00:03:20", "text": "Do you use any other integrations?" },
+    { "speaker": "Helen", "ts": "00:03:26", "text": "A couple of clients are on Xero and that connector is even less reliable, so I tell new clients to stay on QuickBooks. What I really want is a sync status dashboard, so I can see at a glance which clients synced cleanly and which need attention. Right now reliability is my number one issue with the product." }
+  ]
+}

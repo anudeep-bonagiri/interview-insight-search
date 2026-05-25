@@ -1,0 +1,24 @@
+{
+  "id": "int-003",
+  "title": "Mobile receipt scanning on the go",
+  "product": "Maple",
+  "date": "2026-02-06",
+  "interviewer": "Marcus (Research)",
+  "participant": {
+    "name": "Ray",
+    "role": "Field Sales Lead",
+    "company": "Regional HVAC contractor"
+  },
+  "turns": [
+    { "speaker": "Marcus", "ts": "00:00:09", "text": "Ray, you're on the road a lot. How do you use Maple day to day?" },
+    { "speaker": "Ray", "ts": "00:00:18", "text": "Almost entirely on my phone. I'm at job sites, gas stations, hardware stores. I snap a photo of the receipt right at the register and move on. Or that's the idea, anyway." },
+    { "speaker": "Marcus", "ts": "00:00:46", "text": "You said 'that's the idea.' What actually happens?" },
+    { "speaker": "Ray", "ts": "00:00:52", "text": "The receipt scanning gets the total wrong a lot. Like it reads $42.00 as $4.20, or it grabs the wrong date. Crumpled gas receipts are basically a coin flip. Then I'm fixing numbers later at night, which defeats the whole point of scanning on the spot." },
+    { "speaker": "Marcus", "ts": "00:01:38", "text": "How often would you say the scan is wrong?" },
+    { "speaker": "Ray", "ts": "00:01:44", "text": "Maybe one in three needs a correction. And the app doesn't flag which ones it's unsure about, so I have to double-check all of them. If it just told me 'low confidence on this amount,' I'd only check those." },
+    { "speaker": "Marcus", "ts": "00:02:30", "text": "Anything else about the mobile experience?" },
+    { "speaker": "Ray", "ts": "00:02:36", "text": "The camera capture is slow to open, and if I have spotty signal at a site the photo sometimes fails to upload and I don't notice until later. I've lost a couple of receipts that way. Offline capture that syncs when I get signal would be huge." },
+    { "speaker": "Marcus", "ts": "00:03:20", "text": "Despite all that, you keep using it. Why?" },
+    { "speaker": "Ray", "ts": "00:03:26", "text": "Because taking a photo still beats keeping a shoebox of paper. It's better than what I did before. But the OCR accuracy is the thing that would make me actually trust it instead of babysitting every scan." }
+  ]
+}

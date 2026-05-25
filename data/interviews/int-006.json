@@ -1,0 +1,24 @@
+{
+  "id": "int-006",
+  "title": "Power user: automation wins and multi-entity gaps",
+  "product": "Maple",
+  "date": "2026-02-14",
+  "interviewer": "Marcus (Research)",
+  "participant": {
+    "name": "Aisha",
+    "role": "Controller",
+    "company": "Holding company managing 4 LLCs"
+  },
+  "turns": [
+    { "speaker": "Marcus", "ts": "00:00:07", "text": "Aisha, you're one of our heaviest users. What do you love about Maple?" },
+    { "speaker": "Aisha", "ts": "00:00:17", "text": "The automation, hands down. The rules engine is excellent. I set up rules so vendor X always lands in the right category with the right class, and now ninety percent of transactions categorize themselves. That alone saves me a full day a month." },
+    { "speaker": "Marcus", "ts": "00:00:58", "text": "That's great to hear. Anything else that works well?" },
+    { "speaker": "Aisha", "ts": "00:01:05", "text": "The receipt-to-transaction matching is smart, and the audit log is clean, which my auditors love. When the product works, it really works. It's clearly built by people who understand bookkeeping." },
+    { "speaker": "Marcus", "ts": "00:01:45", "text": "Where does it fall short for you?" },
+    { "speaker": "Aisha", "ts": "00:01:52", "text": "Multi-entity. I run four LLCs and Maple really wants me to treat them as one company. I have to keep four separate logins and I can't see a consolidated view across them. Switching accounts all day is maddening." },
+    { "speaker": "Marcus", "ts": "00:02:38", "text": "What would the ideal look like?" },
+    { "speaker": "Aisha", "ts": "00:02:45", "text": "One login, an entity switcher, and a consolidated dashboard that rolls up all four. Plus a real approval workflow, right now approvals are just an email nudge. I want multi-step approvals with thresholds, like anything over five thousand needs my sign-off." },
+    { "speaker": "Marcus", "ts": "00:03:35", "text": "If multi-entity isn't solved, does that put your account at risk?" },
+    { "speaker": "Aisha", "ts": "00:03:42", "text": "It's the one thing that could push me to look elsewhere, because it's a daily friction. But honestly the automation is so good that I keep tolerating the login juggling. Fix multi-entity and approvals and I'd be a customer for life." }
+  ]
+}
