@@ -10,11 +10,31 @@ from __future__ import annotations
 import os
 from pathlib import Path
 
-# src/interview_search/config.py -> repo root is three parents up.
+# src/interview_search/config.py -> repo root is three parents up (source layout).
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-DATA_DIR = Path(os.environ.get("IIS_DATA_DIR", REPO_ROOT / "data" / "interviews"))
-EVAL_PATH = Path(os.environ.get("IIS_EVAL_PATH", REPO_ROOT / "data" / "eval" / "queries.yaml"))
+
+def _resolve(env_var: str, *relparts: str) -> Path:
+    """Find a data path, robust to how the package was installed.
+
+    Checks an env override first, then the source-layout repo root, then the
+    current working directory. The cwd fallback covers a non-editable install
+    (e.g. on Streamlit Cloud), where the package lives in site-packages but the
+    repo (and its data/) is the working directory.
+    """
+    override = os.environ.get(env_var)
+    if override:
+        return Path(override)
+    rel = Path(*relparts)
+    for base in (REPO_ROOT, Path.cwd()):
+        candidate = base / rel
+        if candidate.exists():
+            return candidate
+    return REPO_ROOT / rel
+
+
+DATA_DIR = _resolve("IIS_DATA_DIR", "data", "interviews")
+EVAL_PATH = _resolve("IIS_EVAL_PATH", "data", "eval", "queries.yaml")
 INDEX_DIR = Path(os.environ.get("IIS_INDEX_DIR", REPO_ROOT / ".index"))
 
 # Default embedder. "fastembed" downloads a small ONNX model on first use and

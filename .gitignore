@@ -12,6 +12,7 @@ venv/
 # Project
 .index/
 .env
+.streamlit/secrets.toml
 
 # Secrets / personal
 APPLICATION_ANSWER.md

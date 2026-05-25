@@ -19,6 +19,23 @@ from interview_search.synthesize import synthesize
 st.set_page_config(page_title="Interview Insight Search", page_icon=None, layout="wide")
 
 
+def _hydrate_api_key() -> None:
+    """Expose an ANTHROPIC_API_KEY set in Streamlit secrets as an env var.
+
+    Streamlit Cloud also injects secrets as env vars, but this makes the key
+    work either way. Guarded because st.secrets raises when no secrets file
+    exists locally.
+    """
+    try:
+        if "ANTHROPIC_API_KEY" in st.secrets:
+            os.environ.setdefault("ANTHROPIC_API_KEY", st.secrets["ANTHROPIC_API_KEY"])
+    except Exception:
+        pass
+
+
+_hydrate_api_key()
+
+
 @st.cache_resource(show_spinner="Building the search index (downloads a small model on first run)...")
 def get_engine(embedder_name: str) -> SearchEngine:
     return SearchEngine.build(embedder_name=embedder_name)

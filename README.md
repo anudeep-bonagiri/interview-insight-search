@@ -188,9 +188,26 @@ evaluation set. The pipeline is content-agnostic: drop real transcripts (with
 
 ## Deploy the web UI
 
-`requirements.txt` is set up for Streamlit Community Cloud. Point it at
-`app/streamlit_app.py`, add `ANTHROPIC_API_KEY` as a secret if you want the
-synthesis tab, and it runs as is.
+The repo is ready for Streamlit Community Cloud (free). `requirements.txt`
+installs the package and the UI, and `.streamlit/config.toml` sets the theme.
+
+1. Push the repo to GitHub (done).
+2. Go to https://share.streamlit.io and sign in with GitHub.
+3. New app, then point it at this repo:
+   - Repository: `anudeep-bonagiri/interview-insight-search`
+   - Branch: `main`
+   - Main file path: `app/streamlit_app.py`
+
+   Or use the prefilled link:
+   https://share.streamlit.io/deploy?repository=anudeep-bonagiri/interview-insight-search&branch=main&mainModule=app/streamlit_app.py
+4. (Optional, for the synthesis tab) In the app's Settings, Secrets, add:
+   ```toml
+   ANTHROPIC_API_KEY = "sk-ant-..."
+   ```
+   Search and eval work without it.
+
+First load builds the index and downloads the embedding model once, so it takes
+a moment; after that it is cached.
 
 ## What's next
 
